@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCursos - Plataforma de Aprendizaje Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <h2>EduCursos</h2>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="instructores.html">Instructores</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="user-menu">
+                <a href="#" class="btn-login">Iniciar Sesión</a>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Aprende sin límites</h1>
+                <p>Miles de cursos de calidad impartidos por expertos en su campo</p>
+                <div class="hero-buttons">
+                    <a href="cursos.html" class="btn-primary">Explorar Cursos</a>
+                    <a href="#" class="btn-secondary">Registrarse Gratis</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2>Explora por Categorías</h2>
+                    <p>Encuentra el tema perfecto para tu próximo aprendizaje</p>
+                </div>
+                <div class="categories-grid">
+                    <a href="cursos.html?categoria=desarrollo" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Desarrollo Web</h3>
+                        <p>120 cursos</p>
+                    </a>
+                    <a href="cursos.html?categoria=diseno" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Diseño Gráfico</h3>
+                        <p>85 cursos</p>
+                    </a>
+                    <a href="cursos.html?categoria=negocios" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Negocios</h3>
+                        <p>95 cursos</p>
+                    </a>
+                    <a href="cursos.html?categoria=marketing" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3>Marketing Digital</h3>
+                        <p>78 cursos</p>
+                    </a>
+                    <a href="cursos.html?categoria=Crecimiento_Personal" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Crecimiento Personal</h3>
+                        <p>64 cursos</p>
+                    </a>
+                    <a href="cursos.html?categoria=project_manager" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>project manager</h3>
+                        <p>52 cursos</p>
+                    </a>
+                </div>
+                <div class="categories-footer">
+                    <a href="cursos.html" class="btn-outline">Ver todas las categorías</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Courses -->
+        <section class="featured-courses">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2>Cursos Destacados</h2>
+                    <p>Los cursos más populares elegidos por nuestra comunidad</p>
+                </div>
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://via.placeholder.com/300x200" alt="Curso de Desarrollo Web">
+                            <div class="course-badge">Destacado</div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-category">Desarrollo Web</div>
+                            <h3><a href="curso.html">Desarrollo Web Avanzado</a></h3>
+                            <div class="course-meta">
+                                <span><i class="fas fa-user"></i> Juan Pérez</span>
+                                <span><i class="fas fa-clock"></i> 12 horas</span>
+                            </div>
+                            <div class="course-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span>4.5 (128)</span>
+                            </div>
+                            <div class="course-price">
+                                <span class="price">$49.99</span>
+                                <span class="old-price">$99.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://via.placeholder.com/300x200" alt="Curso de Diseño UX/UI">
+                            <div class="course-badge">Nuevo</div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-category">Diseño</div>
+                            <h3><a href="curso.html">Diseño UX/UI desde Cero</a></h3>
+                            <div class="course-meta">
+                                <span><i class="fas fa-user"></i> María López</span>
+                                <span><i class="fas fa-clock"></i> 15 horas</span>
+                            </div>
+                            <div class="course-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>5.0 (96)</span>
+                            </div>
+                            <div class="course-price">
+                                <span class="price">$59.99</span>
+                                <span class="old-price">$119.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://via.placeholder.com/300x200" alt="Curso de Marketing Digital">
+                        </div>
+                        <div class="course-content">
+                            <div class="course-category">Marketing</div>
+                            <h3><a href="curso.html">Marketing Digital Completo</a></h3>
+                            <div class="course-meta">
+                                <span><i class="fas fa-user"></i> Carlos Ruiz</span>
+                                <span><i class="fas fa-clock"></i> 18 horas</span>
+                            </div>
+                            <div class="course-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span>4.0 (75)</span>
+                            </div>
+                            <div class="course-price">
+                                <span class="price">$69.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://via.placeholder.com/300x200" alt="Curso de Crecimiento Personal">
+                            <div class="course-badge">50% Off</div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-category">Crecimiento Personal</div>
+                            <h3><a href="curso.html">Mindfulness y Productividad</a></h3>
+                            <div class="course-meta">
+                                <span><i class="fas fa-user"></i> Ana Martínez</span>
+                                <span><i class="fas fa-clock"></i> 10 horas</span>
+                            </div>
+                            <div class="course-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span>4.7 (112)</span>
+                            </div>
+                            <div class="course-price">
+                                <span class="price">$39.99</span>
+                                <span class="old-price">$79.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="courses-footer">
+                    <a href="cursos.html" class="btn-primary">Ver todos los cursos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructors Section -->
+        <section class="instructors-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2>Instructores Destacados</h2>
+                    <p>Aprende de los mejores profesionales en su campo</p>
+                </div>
+                <div class="instructors-grid">
+                    <div class="instructor-card">
+                        <div class="instructor-image">
+                            <img src="https://via.placeholder.com/150" alt="Juan Pérez">
+                        </div>
+                        <h3>Juan Pérez</h3>
+                        <p class="instructor-title">Desarrollador Web Senior</p>
+                        <div class="instructor-stats">
+                            <div class="stat">
+                                <span class="stat-value">12</span>
+                                <span class="stat-label">Cursos</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">4.8</span>
+                                <span class="stat-label">Valoración</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">15k</span>
+                                <span class="stat-label">Estudiantes</span>
+                            </div>
+                        </div>
+                        <a href="instructores.html" class="btn-outline-sm">Ver perfil</a>
+                    </div>
+                    <div class="instructor-card">
+                        <div class="instructor-image">
+                            <img src="https://via.placeholder.com/150" alt="María López">
+                        </div>
+                        <h3>María López</h3>
+                        <p class="instructor-title">Diseñadora UX/UI</p>
+                        <div class="instructor-stats">
+                            <div class="stat">
+                                <span class="stat-value">8</span>
+                                <span class="stat-label">Cursos</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">5.0</span>
+                                <span class="stat-label">Valoración</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">12k</span>
+                                <span class="stat-label">Estudiantes</span>
+                            </div>
+                        </div>
+                        <a href="instructores.html" class="btn-outline-sm">Ver perfil</a>
+                    </div>
+                    <div class="instructor-card">
+                        <div class="instructor-image">
+                            <img src="https://via.placeholder.com/150" alt="Carlos Ruiz">
+                        </div>
+                        <h3>Carlos Ruiz</h3>
+                        <p class="instructor-title">Experto en Marketing</p>
+                        <div class="instructor-stats">
+                            <div class="stat">
+                                <span class="stat-value">15</span>
+                                <span class="stat-label">Cursos</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">4.6</span>
+                                <span class="stat-label">Valoración</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">20k</span>
+                                <span class="stat-label">Estudiantes</span>
+                            </div>
+                        </div>
+                        <a href="instructores.html" class="btn-outline-sm">Ver perfil</a>
+                    </div>
+                </div>
+                <div class="instructors-footer">
+                    <a href="instructores.html" class="btn-outline">Ver todos los instructores</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2>Lo que dicen nuestros estudiantes</h2>
+                    <p>Miles de estudiantes han transformado sus vidas con nuestros cursos</p>
+                </div>
+                <div class="testimonials-slider">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Los cursos de EduCursos han sido fundamentales para mi desarrollo profesional. La calidad del contenido y la experiencia de los instructores es inmejorable."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/60" alt="Laura Gómez">
+                            <div class="author-info">
+                                <h4>Laura Gómez</h4>
+                                <p>Diseñadora Web</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Gracias a los cursos de marketing digital, pude lanzar mi propio negocio online y multiplicar mis ingresos. La inversión valió cada centavo."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/60" alt="Miguel Sánchez">
+                            <div class="author-info">
+                                <h4>Miguel Sánchez</h4>
+                                <p>Emprendedor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-controls">
+                    <button class="testimonial-prev"><i class="fas fa-arrow-left"></i></button>
+                    <button class="testimonial-next"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="section-container">
+                <div class="cta-content">
+                    <h2>¿Listo para comenzar tu viaje de aprendizaje?</h2>
+                    <p>Únete a nuestra comunidad de más de 100,000 estudiantes y transforma tu carrera hoy mismo.</p>
+                    <div class="cta-buttons">
+                        <a href="cursos.html" class="btn-primary">Explorar Cursos</a>
+                        <a href="#" class="btn-secondary">Registrarse Gratis</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>EduCursos</h3>
+                <p>La mejor plataforma para aprender en línea.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="instructores.html">Instructores</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-envelope"></i> info@educursos.com</p>
+                <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 EduCursos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

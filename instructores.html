@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructores - EduCursos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <h2>EduCursos</h2>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="instructores.html" class="active">Instructores</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="user-menu">
+                <a href="#" class="btn-login">Iniciar Sesión</a>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="section-container">
+                <h1>Nuestros Instructores</h1>
+                <p>Aprende de los mejores profesionales en su campo</p>
+            </div>
+        </section>
+
+        <!-- Instructors Section -->
+        <section class="instructors-page">
+            <div class="section-container">
+                <!-- Instructors Filters -->
+                <div class="instructors-filters">
+                    <div class="search-box">
+                        <input type="text" placeholder="Buscar instructor...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="category-filters">
+                        <button class="category-btn active" data-category="all">Todos</button>
+                        <button class="category-btn" data-category="desarrollo">Desarrollo Web</button>
+                        <button class="category-btn" data-category="diseno">Diseño</button>
+                        <button class="category-btn" data-category="marketing">Marketing</button>
+                        <button class="category-btn" data-category="negocios">Negocios</button>
+                        <button class="category-btn" data-category="crecimiento">Crecimiento Personal</button>
+                        <button class="category-btn" data-category="proyectos">Gerencia de Proyectos</button>
+                    </div>
+                </div>
+
+                <!-- Instructors Grid -->
+                <div class="instructors-grid">
+                    <!-- Instructor 1 -->
+                    <div class="instructor-card" data-category="desarrollo">
+                        <div class="instructor-image">
+                            <img src="https://via.placeholder.com/300" alt="Juan Pérez">
+                        </div>
+                        <h3>Juan Pérez</h3>
+                        <p class="instructor-title">Desarrollador Web Senior</p>
+                        <p class="instructor-bio">Especialista en JavaScript y frameworks modernos con más de 10 años de experiencia en desarrollo web.</p>
+                        <div class="instructor-stats">
+                            <div class="stat">
+                                <span class="stat-value">12</span>
+                                <span class="stat-label">Cursos</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">4.8</span>
+                                <span class="stat-label">Valoración</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">15k</span>
+                                <span class="stat-label">Estudiantes</span>
+                            </div>
+                        </div>
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                        <a href="#" class="btn-outline">Ver cursos</a>
+                    </div>
+
+                    <!-- Instructor 2 -->
+                    <div class="instructor-card" data-category="diseno">
+                        <div class="instructor-image">
+                            <img src="https://via.placeholder.com/300" alt="María López">
+                        </div>
+                        <h3>María López</h3>
+                        <p class="instructor-title">Diseñadora UX/UI</p>
+                        <p class="instructor-bio">Diseñadora con experiencia en grandes empresas tecnológicas. Especialista en experiencia de usuario y diseño de interfaces.</p>
+                        <div class="instructor-stats">
+                            <div class="stat">
+                                <span class="stat-value">8</span>
+                                <span class="stat-label">Cursos</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">5.0</span>
+                                <span class="stat-label">Valoración</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">12k</span>
+                                <span class="stat-label">Estudiantes</span>
+                            </div>
+                        </div>
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                        </div>
+                        <a href="#" class="btn-outline">Ver cursos</a>
+                    </div>
+
+                    <!-- Instructor 3 -->
+                    <div class="instructor-card" data-category="marketing">
+                        <div class="instructor-image">
+                            <img src="https://via.placeholder.com/300" alt="Carlos Ruiz">
+                        </div>
+                        <h3>Carlos Ruiz</h3>
+                        <p class="instructor-title">Experto en Marketing Digital</p>
+                        <p class="instructor-bio">Consultor de marketing con experiencia en campañas para empresas Fortune 500. Especialista en SEO y SEM.</p>
+                        <div class="instructor-stats">
+                            <div class="stat">
+                                <span class="stat-value">15</span>
+                                <span class="stat-label">Cursos</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">4.6</span>
+                                <span class="stat-label">Valoración</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">20k</span>
+                                <span class="stat-label">Estudiantes</span>
+                            </div>
+                        </div>
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <a href="#" class="btn-outline">Ver cursos</a>
+                    </div>
+
+                    <!-- Instructor 4 -->
+                    <div class="instructor-card" data-category="negocios">
+                        <div class="instructor-image">
+                            <img src="https://via.placeholder.com/300" alt="Ana Martínez">
+                        </div>
+                        <h3>Ana Martínez</h3>
+                        <p class="instructor-title">Consultora de Negocios</p>
+                        <p class="instructor-bio">MBA con experiencia en consultoría estratégica. Ha ayudado a más de 100 startups a escalar sus operaciones.</p>
+                        <div class="instructor-stats">
+                            <div class="stat">
+                                <span class="stat-value">10</span>
+                                <span class="stat-label">Cursos</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">4.7</span>
+                                <span class="stat-label">Valoración</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">18k</span>
+                                <span class="stat-label">Estudiantes</span>
+                            </div>
+                        </div>
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-medium"></i></a>
+                        </div>
+                        <a href="#" class="btn-outline">Ver cursos</a>
+                    </div>
+
+                    <!-- Instructor 5 -->
+                    <div class="instructor-card" data-category="fotografia">
+                        <div class="instructor-image">
+                            <img src="https://via.placeholder.com/300" alt="Miguel Sánchez">
+                        </div>
+                        <h3>Miguel Sánchez</h3>
+                        <p class="instructor-title">coach motivacional</p>
+                        <p class="instructor-bio">Fotógrafo con más de 15 años de experiencia. Ha trabajado para National Geographic y otras publicaciones de renombre.</p>
+                        <div class="instructor-stats">
+                            <div class="stat">
+                                <span class="stat-value">7</span>
+                                <span class="stat-label">Cursos</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">4.9</span>
+                                <span class="stat-label">Valoración</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">14k</span>
+                                <span class="stat-label">Estudiantes</span>
+                            </div>
+                        </div>
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-flickr"></i></a>
+                        </div>
+                        <a href="#" class="btn-outline">Ver cursos</a>
+                    </div>
+
+                    <!-- Instructor 6 -->
+                    <div class="instructor-card" data-category="desarrollo">
+                        <div class="instructor-image">
+                            <img src="https://via.placeholder.com/300" alt="Laura Gómez">
+                        </div>
+                        <h3>Laura Gómez</h3>
+                        <p class="instructor-title">Desarrolladora Full Stack</p>
+                        <p class="instructor-bio">Ingeniera de software con experiencia en startups y grandes empresas tecnológicas. Especialista en React y Node.js.</p>
+                        <div class="instructor-stats">
+                            <div class="stat">
+                                <span class="stat-value">9</span>
+                                <span class="stat-label">Cursos</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">4.8</span>
+                                <span class="stat-label">Valoración</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">16k</span>
+                                <span class="stat-label">Estudiantes</span>
+                            </div>
+                        </div>
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                        <a href="#" class="btn-outline">Ver cursos</a>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#" class="next"><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Become Instructor -->
+        <section class="become-instructor">
+            <div class="section-container">
+                <div class="become-instructor-content">
+                    <h2>¿Quieres convertirte en instructor?</h2>
+                    <p>Comparte tus conocimientos y experiencia con estudiantes de todo el mundo. Únete a nuestra comunidad de instructores y comienza a enseñar hoy mismo.</p>
+                    <a href="#" class="btn-primary">Comenzar a enseñar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>EduCursos</h3>
+                <p>La mejor plataforma para aprender en línea.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="instructores.html">Instructores</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-envelope"></i> info@educursos.com</p>
+                <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 EduCursos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
