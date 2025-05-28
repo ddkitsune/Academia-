@@ -3,496 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos - EduCursos</title>
+    <title>Cursos - Cursos</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header class="main-header">
-        <div class="header-container">
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-left">
+                <div class="nav-item dropdown">
+                    <span>CURSOS <i class="fas fa-chevron-down"></i></span>
+                    <div class="dropdown-content">
+                        <a href="#">Todos los cursos</a>
+                        <a href="#">Oratoria</a>
+                        <a href="#">Liderazgo</a>
+                        <a href="#">Crecimiento Personal</a>
+                        <a href="#">Gerencia de Proyecto</a>
+                        <a href="#">Administración del Tiempo</a>
+                    </div>
+                </div>
+                <div class="nav-item">INSTRUCTORES</div>
+                <div class="nav-item dropdown">
+                    <span>ACADEMIA <i class="fas fa-chevron-down"></i></span>
+                    <div class="dropdown-content">
+                        <a href="#">Nuestra historia</a>
+                        <a href="#">Metodología</a>
+                        <a href="#">Certificaciones</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <span>EMPRESARIAL <i class="fas fa-chevron-down"></i></span>
+                    <div class="dropdown-content">
+                        <a href="#">Capacitación corporativa</a>
+                        <a href="#">Programas especiales</a>
+                        <a href="#">Consultorías</a>
+                    </div>
+                </div>
+            </div>
+            
             <div class="logo">
-                <h2>EduCursos</h2>
+                <h1>Cursos<span class="academy">Academy</span></h1>
             </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="cursos.html" class="active">Cursos</a></li>
-                    <li><a href="instructores.html">Instructores</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <div class="user-menu">
-                <a href="#" class="btn-login">Iniciar Sesión</a>
+            
+            <div class="nav-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar cursos..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="nav-icons">
+                    <i class="fas fa-bars menu-icon"></i>
+                    <i class="fas fa-user user-icon"></i>
+                    <i class="fas fa-heart heart-icon"></i>
+                    <i class="fas fa-graduation-cap cert-icon"></i>
+                </div>
             </div>
-            <button class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
+        </nav>
     </header>
 
-    <main>
-        <!-- Page Header -->
-        <section class="page-header">
-            <div class="section-container">
-                <h1>Explora Nuestros Cursos</h1>
-                <p>Encuentra el curso perfecto para alcanzar tus metas profesionales</p>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Explora Nuestros Cursos</h1>
+            <p>Encuentra el curso perfecto para alcanzar tus metas deportivas y de bienestar</p>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses-section">
+        <div class="courses-layout">
+            <!-- Sidebar Filters -->
+            <div class="courses-sidebar">
+                <div class="filter-section">
+                    <h3>Categorías</h3>
+                    <ul class="filter-list">
+                        <li>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="category" value="oratoria" checked>
+                                <span class="checkmark"></span>
+                                Oratoria
+                                <span class="count">45</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="category" value="liderazgo">
+                                <span class="checkmark"></span>
+                                Liderazgo
+                                <span class="count">38</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="category" value="crecimiento">
+                                <span class="checkmark"></span>
+                                Crecimiento Personal
+                                <span class="count">25</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="category" value="gerencia">
+                                <span class="checkmark"></span>
+                                Gerencia de Proyecto
+                                <span class="count">32</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="category" value="tiempo">
+                                <span class="checkmark"></span>
+                                Administración del Tiempo
+                                <span class="count">18</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Nivel</h3>
+                    <ul class="filter-list">
+                        <li>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="level" value="principiante">
+                                <span class="checkmark"></span>
+                                Principiante
+                                <span class="count">67</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="level" value="intermedio">
+                                <span class="checkmark"></span>
+                                Intermedio
+                                <span class="count">54</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="level" value="avanzado">
+                                <span class="checkmark"></span>
+                                Avanzado
+                                <span class="count">37</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Duración</h3>
+                    <ul class="filter-list">
+                        <li>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="duration" value="corto">
+                                <span class="checkmark"></span>
+                                0-5 horas
+                                <span class="count">42</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="duration" value="medio">
+                                <span class="checkmark"></span>
+                                5-15 horas
+                                <span class="count">78</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" name="duration" value="largo">
+                                <span class="checkmark"></span>
+                                15+ horas
+                                <span class="count">38</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="btn-filter-apply">Aplicar Filtros</button>
+                <button class="btn-filter-reset">Restablecer</button>
             </div>
-        </section>
 
-        <!-- Courses Section -->
-        <section class="courses-section">
-            <div class="section-container">
-                <div class="courses-layout">
-                    <!-- Sidebar Filters -->
-                    <div class="courses-sidebar">
-                        <div class="filter-section">
-                            <h3>Categorías</h3>
-                            <ul class="filter-list">
-                                <li>
-                                    <label class="filter-checkbox">
-                                        <input type="checkbox" name="category" value="desarrollo" checked>
-                                        <span class="checkmark"></span>
-                                        Desarrollo Web
-                                        <span class="count">120</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="filter-checkbox">
-                                        <input type="checkbox" name="category" value="diseno">
-                                        <span class="checkmark"></span>
-                                        Diseño Gráfico
-                                        <span class="count">85</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="filter-checkbox">
-                                        <input type="checkbox" name="category" value="negocios">
-                                        <span class="checkmark"></span>
-                                        Negocios
-                                        <span class="count">95</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="filter-checkbox">
-                                        <input type="checkbox" name="category" value="marketing">
-                                        <span class="checkmark"></span>
-                                        Marketing Digital
-                                        <span class="count">78</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="filter-checkbox">
-                                        <input type="checkbox" name="category" value="Crecimiento_Personal">
-                                        <span class="checkmark"></span>
-                                        Crecimiento Personal
-                                        <span class="count">64</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="filter-checkbox">
-                                        <input type="checkbox" name="category" value="musica">
-                                        <span class="checkmark"></span>
-                                        project manager
-                                        <span class="count">52</span>
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="filter-section">
-                            <h3>Nivel</h3>
-                            <ul class="filter-list">
-                                <li>
-                                    <label class="filter-checkbox">
-                                        <input type="checkbox" name="level" value="principiante">
-                                        <span class="checkmark"></span>
-                                        Principiante
-                                        <span class="count">245</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="filter-checkbox">
-                                        <input type="checkbox" name="level" value="intermedio">
-                                        <span class="checkmark"></span>
-                                        Intermedio
-                                        <span class="count">183</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="filter-checkbox">
-                                        <input type="checkbox" name="level" value="avanzado">
-                                        <span class="checkmark"></span>
-                                        Avanzado
-                                        <span class="count">97</span>
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="filter-section">
-                            <h3>Duración</h3>
-                            <ul class="filter-list">
-                                <li>
-                                    <label class="filter-checkbox">
-                                        <input type="checkbox" name="duration" value="corto">
-                                        <span class="checkmark"></span>
-                                        0-3 horas
-                                        <span class="count">87</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="filter-checkbox">
-                                        <input type="checkbox" name="duration" value="medio">
-                                        <span class="checkmark"></span>
-                                        3-10 horas
-                                        <span class="count">156</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="filter-checkbox">
-                                        <input type="checkbox" name="duration" value="largo">
-                                        <span class="checkmark"></span>
-                                        10+ horas
-                                        <span class="count">282</span>
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="filter-section">
-                            <h3>Valoración</h3>
-                            <ul class="filter-list">
-                                <li>
-                                    <label class="filter-checkbox">
-                                        <input type="checkbox" name="rating" value="4.5">
-                                        <span class="checkmark"></span>
-                                        <div class="stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star-half-alt"></i>
-                                        </div>
-                                        4.5 & más
-                                        <span class="count">215</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="filter-checkbox">
-                                        <input type="checkbox" name="rating" value="4.0">
-                                        <span class="checkmark"></span>
-                                        <div class="stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                        </div>
-                                        4.0 & más
-                                        <span class="count">310</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="filter-checkbox">
-                                        <input type="checkbox" name="rating" value="3.5">
-                                        <span class="checkmark"></span>
-                                        <div class="stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star-half-alt"></i>
-                                            <i class="far fa-star"></i>
-                                        </div>
-                                        3.5 & más
-                                        <span class="count">425</span>
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <button class="btn-filter-apply">Aplicar Filtros</button>
-                        <button class="btn-filter-reset">Restablecer</button>
+            <!-- Courses Content -->
+            <div class="courses-content">
+                <div class="courses-header">
+                    <div class="courses-count">
+                        Mostrando <span>45</span> cursos de <span>158</span>
                     </div>
-
-                    <!-- Courses Content -->
-                    <div class="courses-content">
-                        <div class="courses-header">
-                            <div class="courses-count">
-                                Mostrando <span>120</span> cursos de <span>525</span>
-                            </div>
-                            <div class="courses-sort">
-                                <label for="sort-select">Ordenar por:</label>
-                                <select id="sort-select">
-                                    <option value="popular">Más populares</option>
-                                    <option value="newest">Más recientes</option>
-                                    <option value="price-low">Precio: Bajo a Alto</option>
-                                    <option value="price-high">Precio: Alto a Bajo</option>
-                                    <option value="rating">Mejor valorados</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="courses-grid">
-                            <!-- Curso 1 -->
-                            <div class="course-card">
-                                <div class="course-image">
-                                    <img src="https://via.placeholder.com/300x200" alt="Curso de Crecimiento Personal">
-                                    <div class="course-badge">Nuevo</div>
-                                </div>
-                                <div class="course-content">
-                                    <div class="course-category">Crecimiento Personal</div>
-                                    <h3><a href="curso.html">Mindfulness y Productividad</a></h3>
-                                    <div class="course-meta">
-                                        <span><i class="fas fa-user"></i> Ana Martínez</span>
-                                        <span><i class="fas fa-clock"></i> 10 horas</span>
-                                    </div>
-                                    <div class="course-rating">
-                                        <div class="stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                        <span>5.0 (112)</span>
-                                    </div>
-                                    <div class="course-price">
-                                        <span class="price">$39.99</span>
-                                        <span class="old-price">$79.99</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="course-card">
-                                <div class="course-image">
-                                    <img src="https://via.placeholder.com/300x200" alt="Curso de Gerencia de Proyectos">
-                                    <div class="course-badge">50% Off</div>
-                                </div>
-                                <div class="course-content">
-                                    <div class="course-category">Gerencia de Proyectos</div>
-                                    <h3><a href="curso.html">Metodologías Ágiles: Scrum y Kanban</a></h3>
-                                    <div class="course-meta">
-                                        <span><i class="fas fa-user"></i> Carlos Ruiz</span>
-                                        <span><i class="fas fa-clock"></i> 14 horas</span>
-                                    </div>
-                                    <div class="course-rating">
-                                        <div class="stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star-half-alt"></i>
-                                        </div>
-                                        <span>4.7 (98)</span>
-                                    </div>
-                                    <div class="course-price">
-                                        <span class="price">$44.99</span>
-                                        <span class="old-price">$89.99</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Curso 2 -->
-                            <div class="course-card">
-                                <div class="course-image">
-                                    <img src="https://via.placeholder.com/300x200" alt="Curso de JavaScript">
-                                </div>
-                                <div class="course-content">
-                                    <div class="course-category">Desarrollo Web</div>
-                                    <h3><a href="curso.html">JavaScript Moderno</a></h3>
-                                    <div class="course-meta">
-                                        <span><i class="fas fa-user"></i> Laura Gómez</span>
-                                        <span><i class="fas fa-clock"></i> 12 horas</span>
-                                    </div>
-                                    <div class="course-rating">
-                                        <div class="stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                        </div>
-                                        <span>4.0 (185)</span>
-                                    </div>
-                                    <div class="course-price">
-                                        <span class="price">$39.99</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Curso 3 -->
-                            <div class="course-card">
-                                <div class="course-image">
-                                    <img src="https://via.placeholder.com/300x200" alt="Curso de React">
-                                    <div class="course-badge">Nuevo</div>
-                                </div>
-                                <div class="course-content">
-                                    <div class="course-category">Desarrollo Web</div>
-                                    <h3><a href="curso.html">React: De Cero a Experto</a></h3>
-                                    <div class="course-meta">
-                                        <span><i class="fas fa-user"></i> Carlos Ruiz</span>
-                                        <span><i class="fas fa-clock"></i> 15 horas</span>
-                                    </div>
-                                    <div class="course-rating">
-                                        <div class="stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                        <span>5.0 (92)</span>
-                                    </div>
-                                    <div class="course-price">
-                                        <span class="price">$49.99</span>
-                                        <span class="old-price">$99.99</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Curso 4 -->
-                            <div class="course-card">
-                                <div class="course-image">
-                                    <img src="https://via.placeholder.com/300x200" alt="Curso de Node.js">
-                                </div>
-                                <div class="course-content">
-                                    <div class="course-category">Desarrollo Web</div>
-                                    <h3><a href="curso.html">Node.js y Express</a></h3>
-                                    <div class="course-meta">
-                                        <span><i class="fas fa-user"></i> Miguel Sánchez</span>
-                                        <span><i class="fas fa-clock"></i> 10 horas</span>
-                                    </div>
-                                    <div class="course-rating">
-                                        <div class="stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                        </div>
-                                        <span>4.2 (145)</span>
-                                    </div>
-                                    <div class="course-price">
-                                        <span class="price">$44.99</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Curso 5 -->
-                            <div class="course-card">
-                                <div class="course-image">
-                                    <img src="https://via.placeholder.com/300x200" alt="Curso de MongoDB">
-                                </div>
-                                <div class="course-content">
-                                    <div class="course-category">Desarrollo Web</div>
-                                    <h3><a href="curso.html">MongoDB para Desarrolladores</a></h3>
-                                    <div class="course-meta">
-                                        <span><i class="fas fa-user"></i> Ana Martínez</span>
-                                        <span><i class="fas fa-clock"></i> 8 horas</span>
-                                    </div>
-                                    <div class="course-rating">
-                                        <div class="stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star-half-alt"></i>
-                                            <i class="far fa-star"></i>
-                                        </div>
-                                        <span>3.7 (110)</span>
-                                    </div>
-                                    <div class="course-price">
-                                        <span class="price">$34.99</span>
-                                        <span class="old-price">$69.99</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Curso 6 -->
-                            <div class="course-card">
-                                <div class="course-image">
-                                    <img src="https://via.placeholder.com/300x200" alt="Curso de Desarrollo Web Avanzado">
-                                    <div class="course-badge">Destacado</div>
-                                </div>
-                                <div class="course-content">
-                                    <div class="course-category">Desarrollo Web</div>
-                                    <h3><a href="curso.html">Desarrollo Web Avanzado</a></h3>
-                                    <div class="course-meta">
-                                        <span><i class="fas fa-user"></i> Juan Pérez</span>
-                                        <span><i class="fas fa-clock"></i> 12 horas</span>
-                                    </div>
-                                    <div class="course-rating">
-                                        <div class="stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star-half-alt"></i>
-                                        </div>
-                                        <span>4.5 (128)</span>
-                                    </div>
-                                    <div class="course-price">
-                                        <span class="price">$49.99</span>
-                                        <span class="old-price">$99.99</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pagination -->
-                        <div class="pagination">
-                            <a href="#" class="active">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
-                            <a href="#">4</a>
-                            <a href="#">5</a>
-                            <a href="#" class="next"><i class="fas fa-chevron-right"></i></a>
-                        </div>
+                    <div class="courses-sort">
+                        <label for="sort-select">Ordenar por:</label>
+                        <select id="sort-select">
+                            <option value="popular">Más populares</option>
+                            <option value="newest">Más recientes</option>
+                            <option value="price-low">Precio: Bajo a Alto</option>
+                            <option value="price-high">Precio: Alto a Bajo</option>
+                            <option value="rating">Mejor valorados</option>
+                        </select>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
 
-    <footer class="main-footer">
-        <div class="footer-container">
-            <div class="footer-info">
-                <h3>EduCursos</h3>
-                <p>La mejor plataforma para aprender en línea.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Enlaces</h4>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>
-                    <li><a href="instructores.html">Instructores</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4>Recursos</h4>
-                <ul>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Preguntas frecuentes</a></li>
-                    <li><a href="#">Ayuda</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h4>Contacto</h4>
-                <p><i class="fas fa-envelope"></i> info@educursos.com</p>
-                <p><i class="fas fa-phone"></i> +123 456 7890</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2023 EduCursos. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+                <div class="courses-grid">
+                    <!-- Curso 1 -->
+                    <div class="course-card" data-level="principiante">
+                        <div class="course-image">
+                            <img src="data:image/jpeg;base64,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

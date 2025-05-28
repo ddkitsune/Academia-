@@ -3,150 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduCursos - Plataforma de Aprendizaje Online</title>
+    <title>Cursos - Plataforma de Aprendizaje Deportivo</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header class="main-header">
-        <div class="header-container">
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-left">
+                <div class="nav-item dropdown">
+                    <span>CURSOS <i class="fas fa-chevron-down"></i></span>
+                    <div class="dropdown-content">
+                        <a href="#">Todos los cursos</a>
+                        <a href="#">Oratoria</a>
+                        <a href="#">Liderazgo</a>
+                        <a href="#">Crecimiento Personal</a>
+                        <a href="#">Gerencia de Proyecto</a>
+                        <a href="#">Administración del Tiempo</a>
+                    </div>
+                </div>
+                <div class="nav-item">INSTRUCTORES</div>
+                <div class="nav-item dropdown">
+                    <span>ACADEMIA <i class="fas fa-chevron-down"></i></span>
+                    <div class="dropdown-content">
+                        <a href="#">Nuestra historia</a>
+                        <a href="#">Metodología</a>
+                        <a href="#">Certificaciones</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <span>EMPRESARIAL <i class="fas fa-chevron-down"></i></span>
+                    <div class="dropdown-content">
+                        <a href="#">Capacitación corporativa</a>
+                        <a href="#">Programas especiales</a>
+                        <a href="#">Consultorías</a>
+                    </div>
+                </div>
+            </div>
+            
             <div class="logo">
-                <h2>EduCursos</h2>
+                <h1><span class="academy">Academy</span></h1>
             </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html" class="active">Inicio</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>
-                    <li><a href="instructores.html">Instructores</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <div class="user-menu">
-                <a href="#" class="btn-login">Iniciar Sesión</a>
+            
+            <div class="nav-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar cursos..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="nav-icons">
+                    <i class="fas fa-bars menu-icon"></i>
+                    <i class="fas fa-user user-icon"></i>
+                    <i class="fas fa-heart heart-icon"></i>
+                    <i class="fas fa-graduation-cap cert-icon"></i>
+                </div>
             </div>
-            <button class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
+        </nav>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero-section">
-            <div class="hero-content">
-                <h1>Aprende sin límites</h1>
-                <p>Miles de cursos de calidad impartidos por expertos en su campo</p>
-                <div class="hero-buttons">
-                    <a href="cursos.html" class="btn-primary">Explorar Cursos</a>
-                    <a href="#" class="btn-secondary">Registrarse Gratis</a>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-content">
+                    <div class="slide-left">
+                        <img src="/placeholder.svg?height=200&width=200" alt="Instructor deportivo" class="hero-product-img">
+                    </div>
+                    <div class="slide-center">
+                        <h2 class="hero-title">TU FORMACIÓN NOS IMPORTA</h2>
+                        <div class="team-photo">
+                            <img src="/placeholder.svg?height=400&width=400" alt="Equipo Cursos" class="team-img">
+                        </div>
+                        <button class="cta-button">Comenzar Ahora</button>
+                    </div>
+                    <div class="slide-right">
+                        <img src="/placeholder.svg?height=200&width=200" alt="Estudiante" class="hero-product-img">
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Categories Section -->
-        <section class="categories-section">
-            <div class="section-container">
-                <div class="section-header">
-                    <h2>Explora por Categorías</h2>
-                    <p>Encuentra el tema perfecto para tu próximo aprendizaje</p>
+            
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-left">
+                        <img src="/placeholder.svg?height=200&width=200" alt="Entrenamiento" class="hero-product-img">
+                    </div>
+                    <div class="slide-center">
+                        <h2 class="hero-title">APRENDE CON EXPERTOS</h2>
+                        <div class="team-photo">
+                            <img src="/placeholder.svg?height=400&width=400" alt="Instructores expertos" class="team-img">
+                        </div>
+                        <button class="cta-button">Ver Instructores</button>
+                    </div>
+                    <div class="slide-right">
+                        <img src="/placeholder.svg?height=200&width=200" alt="Certificación" class="hero-product-img">
+                    </div>
                 </div>
-                <div class="categories-grid">
-                    <a href="cursos.html?categoria=desarrollo" class="category-card">
-                        <div class="category-icon">
-                            <i class="fas fa-code"></i>
+            </div>
+            
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-left">
+                        <img src="/placeholder.svg?height=200&width=200" alt="Nutrición" class="hero-product-img">
+                    </div>
+                    <div class="slide-center">
+                        <h2 class="hero-title">CERTIFICACIONES OFICIALES</h2>
+                        <div class="team-photo">
+                            <img src="/placeholder.svg?height=400&width=400" alt="Certificaciones" class="team-img">
                         </div>
-                        <h3>Desarrollo Web</h3>
-                        <p>120 cursos</p>
-                    </a>
-                    <a href="cursos.html?categoria=diseno" class="category-card">
-                        <div class="category-icon">
-                            <i class="fas fa-paint-brush"></i>
-                        </div>
-                        <h3>Diseño Gráfico</h3>
-                        <p>85 cursos</p>
-                    </a>
-                    <a href="cursos.html?categoria=negocios" class="category-card">
-                        <div class="category-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h3>Negocios</h3>
-                        <p>95 cursos</p>
-                    </a>
-                    <a href="cursos.html?categoria=marketing" class="category-card">
-                        <div class="category-icon">
-                            <i class="fas fa-bullhorn"></i>
-                        </div>
-                        <h3>Marketing Digital</h3>
-                        <p>78 cursos</p>
-                    </a>
-                    <a href="cursos.html?categoria=Crecimiento_Personal" class="category-card">
-                        <div class="category-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
+                        <button class="cta-button">Ver Certificaciones</button>
+                    </div>
+                    <div class="slide-right">
+                        <img src="/placeholder.svg?height=200&width=200" alt="Diploma" class="hero-product-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slider-dots">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Categorías de Cursos</h2>
+            <p class="section-subtitle">Explora nuestras diferentes áreas de especialización</p>
+            
+            <div class="category-grid">
+                <div class="category-card oratoria">
+                    <div class="category-overlay">
+                        <i class="fas fa-microphone category-icon"></i>
+                        <h3>Oratoria</h3>
+                    </div>
+                </div>
+                
+                <div class="category-card liderazgo">
+                    <div class="category-overlay">
+                        <i class="fas fa-users category-icon"></i>
+                        <h3>Liderazgo</h3>
+                    </div>
+                </div>
+                
+                <div class="category-card crecimiento">
+                    <div class="category-overlay">
+                        <i class="fas fa-chart-line category-icon"></i>
                         <h3>Crecimiento Personal</h3>
-                        <p>64 cursos</p>
-                    </a>
-                    <a href="cursos.html?categoria=project_manager" class="category-card">
-                        <div class="category-icon">
-                            <i class="fas fa-book"></i>
-                        </div>
-                        <h3>project manager</h3>
-                        <p>52 cursos</p>
-                    </a>
+                    </div>
                 </div>
-                <div class="categories-footer">
-                    <a href="cursos.html" class="btn-outline">Ver todas las categorías</a>
+                
+                <div class="category-card gerencia">
+                    <div class="category-overlay">
+                        <i class="fas fa-tasks category-icon"></i>
+                        <h3>Gerencia de Proyecto</h3>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Featured Courses -->
-        <section class="featured-courses">
-            <div class="section-container">
-                <div class="section-header">
-                    <h2>Cursos Destacados</h2>
-                    <p>Los cursos más populares elegidos por nuestra comunidad</p>
-                </div>
+    <!-- Featured Courses Section -->
+    <section class="featured-courses">
+        <div class="container">
+            <h2 class="section-title">Cursos Destacados</h2>
+            <p class="section-subtitle">Los cursos más populares de nuestra plataforma</p>
+            
+            <div class="courses-carousel">
+                <button class="carousel-btn prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
                 <div class="courses-grid">
+                    <!-- Curso 1 -->
                     <div class="course-card">
+                        <div class="course-badge">Destacado</div>
                         <div class="course-image">
-                            <img src="https://via.placeholder.com/300x200" alt="Curso de Desarrollo Web">
-                            <div class="course-badge">Destacado</div>
+                            <img src="img\oratoria.jpeg" alt="Oratoria Efectiva" class="course-img">
+                            <div class="course-overlay">
+                                <button class="quick-view-btn">Vista Rápida</button>
+                            </div>
                         </div>
-                        <div class="course-content">
-                            <div class="course-category">Desarrollo Web</div>
-                            <h3><a href="curso.html">Desarrollo Web Avanzado</a></h3>
+                        <div class="course-info">
+                            <div class="course-category">Oratoria</div>
+                            <h3 class="course-name">Oratoria Efectiva y Persuasión</h3>
                             <div class="course-meta">
-                                <span><i class="fas fa-user"></i> Juan Pérez</span>
                                 <span><i class="fas fa-clock"></i> 12 horas</span>
-                            </div>
-                            <div class="course-rating">
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                                <span>4.5 (128)</span>
-                            </div>
-                            <div class="course-price">
-                                <span class="price">$49.99</span>
-                                <span class="old-price">$99.99</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="course-card">
-                        <div class="course-image">
-                            <img src="https://via.placeholder.com/300x200" alt="Curso de Diseño UX/UI">
-                            <div class="course-badge">Nuevo</div>
-                        </div>
-                        <div class="course-content">
-                            <div class="course-category">Diseño</div>
-                            <h3><a href="curso.html">Diseño UX/UI desde Cero</a></h3>
-                            <div class="course-meta">
-                                <span><i class="fas fa-user"></i> María López</span>
-                                <span><i class="fas fa-clock"></i> 15 horas</span>
+                                <span><i class="fas fa-signal"></i> Intermedio</span>
                             </div>
                             <div class="course-rating">
                                 <div class="stars">
@@ -156,24 +203,36 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                                <span>5.0 (96)</span>
+                                <span>(4.9) 234 estudiantes</span>
                             </div>
                             <div class="course-price">
-                                <span class="price">$59.99</span>
-                                <span class="old-price">$119.99</span>
+                                <span class="price-usd">$89</span>
+                                <span class="price-bs">Bs. 615</span>
+                            </div>
+                            <div class="course-actions">
+                                <button class="btn-options">Ver Curso</button>
+                                <button class="btn-favorite">
+                                    <i class="far fa-heart"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Curso 2 -->
                     <div class="course-card">
+                        <div class="course-badge">Nuevo</div>
                         <div class="course-image">
-                            <img src="https://via.placeholder.com/300x200" alt="Curso de Marketing Digital">
+                            <img src="img\liderazgo.jpeg" alt="Liderazgo Transformacional" class="course-img">
+                            <div class="course-overlay">
+                                <button class="quick-view-btn">Vista Rápida</button>
+                            </div>
                         </div>
-                        <div class="course-content">
-                            <div class="course-category">Marketing</div>
-                            <h3><a href="curso.html">Marketing Digital Completo</a></h3>
+                        <div class="course-info">
+                            <div class="course-category">Liderazgo</div>
+                            <h3 class="course-name">Liderazgo Transformacional</h3>
                             <div class="course-meta">
-                                <span><i class="fas fa-user"></i> Carlos Ruiz</span>
-                                <span><i class="fas fa-clock"></i> 18 horas</span>
+                                <span><i class="fas fa-clock"></i> 8 horas</span>
+                                <span><i class="fas fa-signal"></i> Principiante</span>
                             </div>
                             <div class="course-rating">
                                 <div class="stars">
@@ -183,24 +242,35 @@
                                     <i class="fas fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <span>4.0 (75)</span>
+                                <span>(4.7) 189 estudiantes</span>
                             </div>
                             <div class="course-price">
-                                <span class="price">$69.99</span>
+                                <span class="price-usd">$65</span>
+                                <span class="price-bs">Bs. 449</span>
+                            </div>
+                            <div class="course-actions">
+                                <button class="btn-options">Ver Curso</button>
+                                <button class="btn-favorite">
+                                    <i class="far fa-heart"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Curso 3 -->
                     <div class="course-card">
                         <div class="course-image">
-                            <img src="https://via.placeholder.com/300x200" alt="Curso de Crecimiento Personal">
-                            <div class="course-badge">50% Off</div>
+                            <img src="img\crecimiento.jpeg" alt="Crecimiento Personal" class="course-img">
+                            <div class="course-overlay">
+                                <button class="quick-view-btn">Vista Rápida</button>
+                            </div>
                         </div>
-                        <div class="course-content">
+                        <div class="course-info">
                             <div class="course-category">Crecimiento Personal</div>
-                            <h3><a href="curso.html">Mindfulness y Productividad</a></h3>
+                            <h3 class="course-name">Desarrollo Personal Integral</h3>
                             <div class="course-meta">
-                                <span><i class="fas fa-user"></i> Ana Martínez</span>
-                                <span><i class="fas fa-clock"></i> 10 horas</span>
+                                <span><i class="fas fa-clock"></i> 15 horas</span>
+                                <span><i class="fas fa-signal"></i> Avanzado</span>
                             </div>
                             <div class="course-rating">
                                 <div class="stars">
@@ -208,210 +278,346 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="fas fa-star"></i>
                                 </div>
-                                <span>4.7 (112)</span>
+                                <span>(5.0) 156 estudiantes</span>
                             </div>
                             <div class="course-price">
-                                <span class="price">$39.99</span>
-                                <span class="old-price">$79.99</span>
+                                <span class="price-usd">$120</span>
+                                <span class="price-bs">Bs. 829</span>
+                            </div>
+                            <div class="course-actions">
+                                <button class="btn-options">Ver Curso</button>
+                                <button class="btn-favorite">
+                                    <i class="far fa-heart"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="courses-footer">
-                    <a href="cursos.html" class="btn-primary">Ver todos los cursos</a>
-                </div>
-            </div>
-        </section>
 
-        <!-- Instructors Section -->
-        <section class="instructors-section">
-            <div class="section-container">
-                <div class="section-header">
-                    <h2>Instructores Destacados</h2>
-                    <p>Aprende de los mejores profesionales en su campo</p>
-                </div>
-                <div class="instructors-grid">
-                    <div class="instructor-card">
-                        <div class="instructor-image">
-                            <img src="https://via.placeholder.com/150" alt="Juan Pérez">
-                        </div>
-                        <h3>Juan Pérez</h3>
-                        <p class="instructor-title">Desarrollador Web Senior</p>
-                        <div class="instructor-stats">
-                            <div class="stat">
-                                <span class="stat-value">12</span>
-                                <span class="stat-label">Cursos</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-value">4.8</span>
-                                <span class="stat-label">Valoración</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-value">15k</span>
-                                <span class="stat-label">Estudiantes</span>
+                    <!-- Curso 4 -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="img\crecimiento.png" alt="Crecimiento Personal y Bienestar" class="course-img">
+                            <div class="course-overlay">
+                                <button class="quick-view-btn">Vista Rápida</button>
                             </div>
                         </div>
-                        <a href="instructores.html" class="btn-outline-sm">Ver perfil</a>
+                        <div class="course-info">
+                            <div class="course-category">Crecimiento Personal</div>
+                            <h3 class="course-name">Crecimiento Personal y Bienestar</h3>
+                            <div class="course-meta">
+                                <span><i class="fas fa-clock"></i> 10 horas</span>
+                                <span><i class="fas fa-signal"></i> Intermedio</span>
+                            </div>
+                            <div class="course-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span>(4.8) 203 estudiantes</span>
+                            </div>
+                            <div class="course-price">
+                                <span class="price-usd">$75</span>
+                                <span class="price-bs">Bs. 518</span>
+                            </div>
+                            <div class="course-actions">
+                                <button class="btn-options">Ver Curso</button>
+                                <button class="btn-favorite">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="instructor-card">
-                        <div class="instructor-image">
-                            <img src="https://via.placeholder.com/150" alt="María López">
-                        </div>
-                        <h3>María López</h3>
-                        <p class="instructor-title">Diseñadora UX/UI</p>
-                        <div class="instructor-stats">
-                            <div class="stat">
-                                <span class="stat-value">8</span>
-                                <span class="stat-label">Cursos</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-value">5.0</span>
-                                <span class="stat-label">Valoración</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-value">12k</span>
-                                <span class="stat-label">Estudiantes</span>
-                            </div>
-                        </div>
-                        <a href="instructores.html" class="btn-outline-sm">Ver perfil</a>
-                    </div>
-                    <div class="instructor-card">
-                        <div class="instructor-image">
-                            <img src="https://via.placeholder.com/150" alt="Carlos Ruiz">
-                        </div>
-                        <h3>Carlos Ruiz</h3>
-                        <p class="instructor-title">Experto en Marketing</p>
-                        <div class="instructor-stats">
-                            <div class="stat">
-                                <span class="stat-value">15</span>
-                                <span class="stat-label">Cursos</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-value">4.6</span>
-                                <span class="stat-label">Valoración</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-value">20k</span>
-                                <span class="stat-label">Estudiantes</span>
-                            </div>
-                        </div>
-                        <a href="instructores.html" class="btn-outline-sm">Ver perfil</a>
-                    </div>
-                </div>
-                <div class="instructors-footer">
-                    <a href="instructores.html" class="btn-outline">Ver todos los instructores</a>
                 </div>
             </div>
-        </section>
+            
+            <div class="view-all-container">
+                <button class="view-all-btn">Ver Todos los Cursos</button>
+            </div>
+        </div>
+    </section>
 
-        <!-- Testimonials -->
-        <section class="testimonials-section">
-            <div class="section-container">
-                <div class="section-header">
-                    <h2>Lo que dicen nuestros estudiantes</h2>
-                    <p>Miles de estudiantes han transformado sus vidas con nuestros cursos</p>
-                </div>
-                <div class="testimonials-slider">
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
-                            <div class="testimonial-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p>"Los cursos de EduCursos han sido fundamentales para mi desarrollo profesional. La calidad del contenido y la experiencia de los instructores es inmejorable."</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <img src="https://via.placeholder.com/60" alt="Laura Gómez">
-                            <div class="author-info">
-                                <h4>Laura Gómez</h4>
-                                <p>Diseñadora Web</p>
-                            </div>
+    <!-- New Courses Section -->
+    <section class="new-courses">
+        <div class="container">
+            <h2 class="section-title">Cursos Nuevos</h2>
+            <p class="section-subtitle">Los últimos cursos añadidos a nuestra plataforma</p>
+            
+            <div class="courses-grid">
+                <!-- Curso Nuevo 1 -->
+                <div class="course-card">
+                    <div class="course-badge">Nuevo</div>
+                    <div class="course-image">
+                        <img src="img\oratoria.jpeg" alt="Oratoria para el Éxito" class="course-img">
+                        <div class="course-overlay">
+                            <button class="quick-view-btn">Vista Rápida</button>
                         </div>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
-                            <div class="testimonial-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p>"Gracias a los cursos de marketing digital, pude lanzar mi propio negocio online y multiplicar mis ingresos. La inversión valió cada centavo."</p>
+                    <div class="course-info">
+                        <div class="course-category">Oratoria</div>
+                        <h3 class="course-name">Oratoria para el Éxito Profesional</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 14 horas</span>
+                            <span><i class="fas fa-signal"></i> Intermedio</span>
                         </div>
-                        <div class="testimonial-author">
-                            <img src="https://via.placeholder.com/60" alt="Miguel Sánchez">
-                            <div class="author-info">
-                                <h4>Miguel Sánchez</h4>
-                                <p>Emprendedor</p>
+                        <div class="course-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
+                            <span>(4.9) 67 estudiantes</span>
+                        </div>
+                        <div class="course-price">
+                            <span class="price-usd">$95</span>
+                            <span class="price-bs">Bs. 657</span>
+                        </div>
+                        <div class="course-actions">
+                            <button class="btn-options">Ver Curso</button>
+                            <button class="btn-favorite">
+                                <i class="far fa-heart"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="testimonials-controls">
-                    <button class="testimonial-prev"><i class="fas fa-arrow-left"></i></button>
-                    <button class="testimonial-next"><i class="fas fa-arrow-right"></i></button>
-                </div>
-            </div>
-        </section>
 
-        <!-- CTA Section -->
-        <section class="cta-section">
-            <div class="section-container">
-                <div class="cta-content">
-                    <h2>¿Listo para comenzar tu viaje de aprendizaje?</h2>
-                    <p>Únete a nuestra comunidad de más de 100,000 estudiantes y transforma tu carrera hoy mismo.</p>
-                    <div class="cta-buttons">
-                        <a href="cursos.html" class="btn-primary">Explorar Cursos</a>
-                        <a href="#" class="btn-secondary">Registrarse Gratis</a>
+                <!-- Curso Nuevo 2 -->
+                <div class="course-card">
+                    <div class="course-badge">Nuevo</div>
+                    <div class="course-image">
+                        <img src="img\liderazgo.jpeg" alt="Liderazgo y Toma de Decisiones" class="course-img">
+                        <div class="course-overlay">
+                            <button class="quick-view-btn">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="course-info">
+                        <div class="course-category">Liderazgo</div>
+                        <h3 class="course-name">Liderazgo y Toma de Decisiones</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 11 horas</span>
+                            <span><i class="fas fa-signal"></i> Avanzado</span>
+                        </div>
+                        <div class="course-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span>(4.6) 43 estudiantes</span>
+                        </div>
+                        <div class="course-price">
+                            <span class="price-usd">$110</span>
+                            <span class="price-bs">Bs. 761</span>
+                        </div>
+                        <div class="course-actions">
+                            <button class="btn-options">Ver Curso</button>
+                            <button class="btn-favorite">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
 
-    <footer class="main-footer">
-        <div class="footer-container">
-            <div class="footer-info">
-                <h3>EduCursos</h3>
-                <p>La mejor plataforma para aprender en línea.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Enlaces</h4>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>
-                    <li><a href="instructores.html">Instructores</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4>Recursos</h4>
-                <ul>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Preguntas frecuentes</a></li>
-                    <li><a href="#">Ayuda</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h4>Contacto</h4>
-                <p><i class="fas fa-envelope"></i> info@educursos.com</p>
-                <p><i class="fas fa-phone"></i> +123 456 7890</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <!-- Curso Nuevo 3 -->
+                <div class="course-card">
+                    <div class="course-badge">Nuevo</div>
+                    <div class="course-image">
+                        <img src="img\tiempo.jpeg" alt="Gestión del Tiempo y Productividad" class="course-img">
+                        <div class="course-overlay">
+                            <button class="quick-view-btn">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="course-info">
+                        <div class="course-category">Administración del Tiempo</div>
+                        <h3 class="course-name">Gestión del Tiempo y Productividad</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 16 horas</span>
+                            <span><i class="fas fa-signal"></i> Avanzado</span>
+                        </div>
+                        <div class="course-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>(5.0) 28 estudiantes</span>
+                        </div>
+                        <div class="course-price">
+                            <span class="price-usd">$135</span>
+                            <span class="price-bs">Bs. 934</span>
+                        </div>
+                        <div class="course-actions">
+                            <button class="btn-options">Ver Curso</button>
+                            <button class="btn-favorite">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2023 EduCursos. Todos los derechos reservados.</p>
+    </section>
+
+    <!-- Instructors Section -->
+    <section class="instructors-section">
+        <div class="container">
+            <h2 class="section-title">Nuestros Instructores</h2>
+            <p class="section-subtitle">Aprende de los mejores profesionales del sector</p>
+            
+            <div class="instructors-grid">
+                <!-- Instructor 1 -->
+                <div class="instructor-card">
+                    <div class="instructor-image">
+                        <img src="img\yuliandry.jpeg" alt="yuliandry Salinas">
+                    </div>
+                    <h3>yuliandry Salinas</h3>
+                    <div class="instructor-title">Especialista en Oratoria y Comunicación</div>
+                    <p class="instructor-bio">Experta en comunicación efectiva con más de 15 años de experiencia en formación de líderes y ejecutivos.</p>
+                    <div class="instructor-stats">
+                        <div class="stat">
+                            <div class="stat-value">12</div>
+                            <div class="stat-label">Cursos</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">2.5K</div>
+                            <div class="stat-label">Estudiantes</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">4.9</div>
+                            <div class="stat-label">Rating</div>
+                        </div>
+                    </div>
+                    <div class="instructor-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Instructor 2 -->
+                <div class="instructor-card">
+                    <div class="instructor-image">
+                        <img src="img\jesus.png" alt="Jesus Montes">
+                    </div>
+                    <h3>Jesus Montes</h3>
+                    <div class="instructor-title">Consultor en Liderazgo y Desarrollo Organizacional</div>
+                    <p class="instructor-bio">Especialista en liderazgo transformacional y desarrollo de equipos de alto rendimiento.</p>
+                    <div class="instructor-stats">
+                        <div class="stat">
+                            <div class="stat-value">8</div>
+                            <div class="stat-label">Cursos</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">1.8K</div>
+                            <div class="stat-label">Estudiantes</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">4.8</div>
+                            <div class="stat-label">Rating</div>
+                        </div>
+                    </div>
+                    <div class="instructor-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Instructor 3 -->
+                <div class="instructor-card">
+                    <div class="instructor-image">
+                        <img src="img\mario.png" alt="Mario Maza">
+                    </div>
+                    <h3>Mario Maza</h3>
+                    <div class="instructor-title">Coach en Crecimiento Personal</div>
+                    <p class="instructor-bio">Especialista en desarrollo personal y profesional con certificación internacional en coaching.</p>
+                    <div class="instructor-stats">
+                        <div class="stat">
+                            <div class="stat-value">6</div>
+                            <div class="stat-label">Cursos</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">1.2K</div>
+                            <div class="stat-label">Estudiantes</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">4.9</div>
+                            <div class="stat-label">Rating</div>
+                        </div>
+                    </div>
+                    <div class="instructor-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Cursos</h3>
+                <p>Tu plataforma de formación deportiva y bienestar. Aprende de los mejores profesionales y obtén certificaciones reconocidas internacionalmente.</p>
+                <div class="social-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Cursos</h4>
+                <ul>
+                    <li><a href="#">Oratoria</a></li>
+                    <li><a href="#">Liderazgo</a></li>
+                    <li><a href="#">Crecimiento Personal</a></li>
+                    <li><a href="#">Gerencia de Proyecto</a></li>
+                    <li><a href="#">Administración del Tiempo</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Academia</h4>
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Instructores</a></li>
+                    <li><a href="#">Metodología</a></li>
+                    <li><a href="#">Certificaciones</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Soporte</h4>
+                <ul>
+                    <li><a href="#">Centro de Ayuda</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div style="text-align: center; padding-top: 2rem; border-top: 1px solid #555; color: #ccc;">
+                <p>&copy; 2024 Cursos. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 
